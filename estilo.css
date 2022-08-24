@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(25, 25, 114);    
+}
+nav{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    text-align: left;
+}
+main{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    text-align: left;
+    list-style: circle;
+
+}

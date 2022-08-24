@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Profisionais</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+                <img src="imagens/logo.png" alt="Logo SGCM">
+        </div>
+        <div id="usuario">
+            <span>usuario: adminstador (admin)</span>
+            <span>papel: ADMIN</span>   
+        </div>
+    </header>
+    <nav>
+        <ul>
+
+            <li><a href="agenda.html"> Agenda</a></li>
+            <li><a href="atendimento.html"> Atendimento</a></li>
+            <li><a href="paciente.html"> Paciente</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="convenios.html"> Convenios</a></li>
+            <li><a href="unidades.html"> Unidades</a></li>
+            <li><a href="especialidades.html"> Especialidades</a></li>
+            <li><a href="usuarios.html">Usuarios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="registroConselho">Registro</label>
+                <input type="text" name="registroConselho" id="registroConselho">
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade">
+                    <option value=""></option>
+                    <option value="1">Especialidade A</option>
+                    <option value="2">Especialidade B</option>
+                    <option value="3">Especialidade C</option>
+                    <option value="4">Especialidade D</option>
+                    <option value="5">Especialidade E</option>
+                </select>
+                <label for="unidade">Unidade</label>
+                <select name="unidade" id="unidade">
+                    <option value="1"></option>
+                    <option value="2">Unidade 1</option>
+                    <option value="3">Unidade 2</option>
+                    <option value="4">Unidade 3</option>
+                    <option value="5">Unidade 4</option>
+                    <option value="6">Unidade 5</option>
+                </select>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+        </form>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Registro</th>
+                    <th>Especialidade</th>
+                    <th>Unidade</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Açôes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>texto 1</td>
+                    <td>texto 2</td>
+                    <td>texto 3</td>
+                    <td>texto 4</td>
+                    <td>texto 5</td>
+                    <td>texto 6</td>
+                    <td>texto 7</td>
+                    <td>
+                        <a href="javascript:void(0)">Editar</a>
+                        <a href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>texto 1</td>
+                    <td>texto 2</td>
+                    <td>texto 3</td>
+                    <td>texto 4</td>
+                    <td>texto 5</td>
+                    <td>texto 6</td>
+                    <td>texto 7</td>
+                    <td>
+                        <a href="javascript:void(0)">Editar</a>
+                        <a href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>texto 1</td>
+                    <td>texto 2</td>
+                    <td>texto 3</td>
+                    <td>texto 4</td>
+                    <td>texto 5</td>
+                    <td>texto 6</td>
+                    <td>texto 7</td>
+                    <td>
+                        <a href="javascript:void(0)">Editar</a>
+                        <a href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>texto 1</td>
+                    <td>texto 2</td>
+                    <td>texto 3</td>
+                    <td>texto 4</td>
+                    <td>texto 5</td>
+                    <td>texto 6</td>
+                    <td>texto 7</td>
+                    <td>
+                        <a href="javascript:void(0)">Editar</a>
+                        <a href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>texto 1</td>
+                    <td>texto 2</td>
+                    <td>texto 3</td>
+                    <td>texto 4</td>
+                    <td>texto 5</td>
+                    <td>texto 6</td>
+                    <td>texto 7</td>
+                    <td>
+                        <a href="javascript:void(0)">Editar</a>
+                        <a href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="" ></td>Total de Registros: 5 </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+    <footer>
+        <span>SGCM - sistema de gerenciamento de Clinica Medica</span>
+        <span>  suporte tecnico: (68) 55555-555 <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a></span>
+    </footer>
+</body>
+</html>
