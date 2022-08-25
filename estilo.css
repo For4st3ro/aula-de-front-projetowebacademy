@@ -14,4 +14,85 @@ main{
     text-align: left;
     list-style: circle;
 
+}     
+    margin: 0%;  
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* para deixa a tela dinamica por padrão coloca tudo um do lado do outro*/
+    flex-direction: column; /*alinha o display em colunas */
+    height: 100vh; /*vh e de vil porte*/
 }
+/* Header e Footer */
+
+header {
+    background-image: linear-gradient(#003366, #006699);/*CRIA UMA COR DEGRADER */
+    display: flex;/* para deixa a tela dinamica por padrão coloca tudo um do lado do outro*/
+    justify-content: space-between;/*Alinhe os itens flexíveis no centro do contêiner E USADO JUNTO COM DISPLAY:FLEX*/
+}
+
+footer {
+    background-color: #003366;/*Escolher a cor*/
+    margin-top: auto;/*A margin-toppropriedade define a margem superior de um elemento.*/
+}
+
+header, footer {
+    color: white;/*escolher a cor da letra*/
+    padding: 0.5em; /*As propriedades CSS paddingsão usadas para gerar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida. pode ser em px, pt, cm, %*/
+}
+
+footer a {
+    color: white;
+}
+
+div#logo {
+    margin: auto 0;
+}
+
+div#logo * {
+    vertical-align: middle;/*propriedade define o alinhamento vertical de um elemento.*/
+    margin-left: 0.5em;/*largem lateral */
+}
+
+div#logo span {
+    font-size: 2em;/* tamanho da fonte para diferentes elementos:*/
+    font-weight: bold;
+}
+
+div#usuarioInfo span, footer span {
+    display: block;/*displaypropriedade especifica o comportamento de exibição*/
+    margin-bottom: 0.5em;
+}
+
+div#usuarioInfo span {
+    text-align: right;
+}
+
+
+/* NAV */
+
+nav {
+    background-color: #383838;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {/*to no nav dentro a que esta dentro do li e que esta dentro do ul*/
+    display: inline-block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover { /*o hover e uma situação "quando passar o mouse em cima" ele vai alterar as caracteristica do a*/
+    background-color: #cccccc;
+    color: #383838;
+}
+
