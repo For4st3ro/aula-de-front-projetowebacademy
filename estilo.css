@@ -1,20 +1,5 @@
 body {
-    background-color: rgb(25, 25, 114);    
-}
-nav{
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 120%;
-    text-align: left;
-}
-main{
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 120%;
-    text-align: left;
-    list-style: circle;
-
-}     
+     
     margin: 0%;  
     font-family: Arial, Helvetica, sans-serif;
     display: flex; /* para deixa a tela dinamica por padrão coloca tudo um do lado do outro*/
