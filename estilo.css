@@ -12,6 +12,8 @@ header {
     background-image: linear-gradient(#003366, #006699);/*CRIA UMA COR DEGRADER */
     display: flex;/* para deixa a tela dinamica por padrão coloca tudo um do lado do outro*/
     justify-content: space-between;/*Alinhe os itens flexíveis no centro do contêiner E USADO JUNTO COM DISPLAY:FLEX*/
+    flex-wrap: wrap;
+
 }
 
 footer {
@@ -47,7 +49,6 @@ div#usuarioInfo span, footer span {
     margin-bottom: 0.5em;
 }
 
-div#usuarioInfo span {
 div#usuarioInfo{
     text-align: right;
 }
@@ -55,7 +56,12 @@ div#usuarioInfo a.botao {
     border: 1px solid white;
 }
 
-
+@media screen and (max-width:430px) {
+    div#usuarioInfo {
+        margin-top: 1em;
+        text-align: left;
+    }
+}
 /* NAV */
 
 nav {
@@ -85,6 +91,36 @@ nav ul li a:hover { /*o hover e uma situação "quando passar o mouse em cima" e
     color: #383838;
 }
 
+nav div#dropdown_menu { /* mundaod o menu das configuraçoes*/
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    border: 1px solid white;
+    box-shadow: 0px 2px 4px 0px black;
+
+}
+nav ul li#dropdown:hover div#dropdown_menu { /* menu da confing*/
+    display: block;
+
+}
+
+nav div#dropdown_menu a {
+    display: block;
+
+}
+
+
+@media screen and (max-width: 700px){
+    nav ul li {
+        display: block;
+        width: 100%;
+
+    }
+    nav ul li a {
+        width: 100%;
+    }
+}
+
 
 /*tabela */
 
@@ -92,11 +128,17 @@ table {
     border-spacing: 0.1em;
     margin: 0.5em auto;
     width: 100%; /*largura da tela */
+
+    /*repositorio*/
+    overflow-x: auto; /*barra de rolagem */
+    display: block;
+    
 }
 
 table th {
     background-color: #003366;
     color: white;
+    
 }
 table td, table th{
     padding: 0.5em;
@@ -149,6 +191,23 @@ input:required:invalid, select:required:invalid { /*required campo obrigatorio  
     border: 1px solid red;
 }
 
+@media screen and (max-width:700px){
+
+    form div.grid {
+        grid-template-columns: 1fr;
+    }
+    form {
+        width: 85%;
+        text-align: left;
+    }
+    form div.grid input, form div.grid select {
+        width:100%;
+    }
+
+
+}
+
+
 
 /* BOTAO  SERA POR CLASS */
 
@@ -183,4 +242,20 @@ a.botao.excluir {
 }
 a.botao.excluir:hover {
     background-color: rgba(201, 23, 23, 0.321);
+}
+
+
+/*  MAIN */
+main {
+    padding: 1em; /*espaçamento dos outros blocos*/
+    background-image: linear-gradient(#cccccc, white);/* degrade*/
+}
+
+/* comandos */
+div#comandos {
+    display: flex ;
+    justify-content: space-between;
+    padding: 0.5em 0.1em; /* o primeiro e a pargem do top e o segundo do lado direito e tinha como por mais */
+    flex-wrap: wrap; /* quando não tiver espaço quebra para a outra linha */
+
 }

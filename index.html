@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable-no">
     <link href="estilo.css" rel="stylesheet">
     <title>Profisionais</title>
 </head>
 <body>
     <head>
+        
         <title>SGCM</title>
         <link rel="stylesheet" href="estilo.css">
     </head>
@@ -31,9 +32,16 @@
                 <li><a href="pacientes.html">Pacientes</a></li>
                 <li><a href="profissionais.html">Profissionais</a></li>
                 <li><a href="convenios.html">Convênios</a></li>
-                <li><a href="unidades.html">Unidades</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="usuarios.html">Usuários</a></li>
+                <li id="dropdown">
+                    <a href="javascript:void(0)">Configurações 
+                        <span>&#9660;</span>
+                    </a>
+                    <div id="dropdown_menu">
+                        <a href="unidades.html">Unidades</a>
+                        <a href="especialidades.html">Especialidades</a>
+                        <a href="usuarios.html">Usuários</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <main>
@@ -69,6 +77,16 @@
                 <input type="button" value="Cancelar">
                 <input type="submit" value="Salvar">
             </form>
+            <div id="comandos">
+                <a href="javascript:void(0)"
+                id="add" class="botao">Adicionar</a>
+                <div>
+                    <form action="">
+                        <label for="">Busca</label>
+                        <input type="text" name="busca" id="busca">
+                    </form>
+                </div>
+            </div>
             <table>
                 <thead>
                     <tr>
