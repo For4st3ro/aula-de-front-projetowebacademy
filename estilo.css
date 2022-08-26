@@ -48,7 +48,11 @@ div#usuarioInfo span, footer span {
 }
 
 div#usuarioInfo span {
+div#usuarioInfo{
     text-align: right;
+}
+div#usuarioInfo a.botao {
+    border: 1px solid white;
 }
 
 
@@ -81,3 +85,102 @@ nav ul li a:hover { /*o hover e uma situação "quando passar o mouse em cima" e
     color: #383838;
 }
 
+
+/*tabela */
+
+table {
+    border-spacing: 0.1em;
+    margin: 0.5em auto;
+    width: 100%; /*largura da tela */
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+table td, table th{
+    padding: 0.5em;
+}
+table tbody tr:nth-child(odd) {/*mundado a cor dos elementos par da tr*/
+    background-color: #c6d4e2;
+}
+table tbody tr:nth-child(even){ /*mundado a cor dos elementos impares da tr*/
+    background-color: #e7ecf1;
+} 
+table tbody tr:hover{/*efeito de mudar a cor de toda a linha da tabela quando passa o mouse*/
+    background-color: #cccccc;
+}
+table tfoot td {
+    border-top: 1px solid #003366;
+    text-align: center;
+}
+table td:last-child, table td.fit {
+    width: 1%;
+    text-align: center;
+    white-space: nowrap; /*ele não permite a quebra de linha */
+}
+
+/*FORMULARIO*/
+
+form {
+    margin: auto;
+    text-align: right;
+    width: fit-content;
+}
+form div.grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 0.5em; /*espaço que fica entre o texto e o input e das linhas*/
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+form label::after{/*pega o espaço do elemento que eu selecionei */
+    content: ':';
+}
+input, select {
+    height: 2em;
+    border: 1px solid #757575;
+    box-sizing: border-box;
+}
+form div.grid imput, form div.grid select { /*para selecional class use .(ponto)*/
+    width: 18em;
+}
+input:required:invalid, select:required:invalid { /*required campo obrigatorio  enquanto for invalido*/
+    border: 1px solid red;
+}
+
+
+/* BOTAO  SERA POR CLASS */
+
+a.botao, input[type="button"],input[type="submit"]{ /*quando quiser seecional alguma propriedade mais profunda use []*/
+    color: white;
+    border: nome;
+    cursor:pointer;
+    background-color: #2c832d;
+    border-radius: 4px;
+
+}
+a.botao:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover{
+    background-color: #1e5e20;
+}
+input,select,a.botao{
+    font-size: 1em;
+}
+input[type="button"],
+input[type="submit"]{
+    height: 2em;
+}
+a.botao {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+    padding: 0 0.4em;
+}
+a.botao.excluir {
+    background-color: rgb(229, 15, 15);
+}
+a.botao.excluir:hover {
+    background-color: rgba(201, 23, 23, 0.321);
+}
